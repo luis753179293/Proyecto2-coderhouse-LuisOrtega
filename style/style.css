@@ -276,3 +276,33 @@ footer{
         transform: rotateY(360deg);
     }
 }
+
+/* ------------ VISTA DESKTOP ------------------------ */
+
+@media screen and (min-width: 1200px){
+
+    
+
+    #grid_padre{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px  1300px 70px;
+        grid-template-areas: 
+        'header header header'
+        'main main main'
+        'footer footer footer';
+    }
+
+
+    .head{
+        display: flex;
+        flex-direction: row;       
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
