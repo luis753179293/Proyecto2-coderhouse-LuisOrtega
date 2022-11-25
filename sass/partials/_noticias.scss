@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#grid_padre_noticias{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px  3000px 70px;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+
+.noticias_h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bloque_noticias{
+    background-color: black;
+    width: auto;
+    height: auto;
+    border: 5px;
+    border-style: double;
+    border-color: rgb(255, 255, 255);
+}
+
+#grid_noticas{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'articulo1'
+    'articulo2'
+    'articulo3'
+    'articulo4'
+}
+
+.articulo_h3{
+    color: white;
+}
+
+.articulo1_p{
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.articulo1{
+    padding: 10px;
+    text-align: center;
+    /* border: white;
+    border-style: double; */
+    grid-area: articulo1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center
+}
+
+
+.articulo2{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: white;
+    border-style: double; */
+    grid-area: articulo2;
+}
+
+.articulo3{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: white;
+    border-style: double; */
+    grid-area: articulo3;
+}
+
+.articulo4{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: white;
+    border-style: double; */
+    grid-area: articulo4;
+}
+
+/* ------------ VISTA DESKTOP ------------------------ */
+
+@media screen and (min-width: 1200px){
+
+   
+    /* ---------- Noticias ------------------- */
+    #grid_padre_noticias{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px  1300px 70px;
+        grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+    }
+
+
+    #grid_noticas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        'articulo1 articulo1 articulo2'
+        'articulo1 articulo1 articulo2'
+        'articulo3 articulo4 articulo2'
+        'articulo3 articulo4 articulo2'
+    }
+
+    .articulo1{
+        padding: 20px;
+    }
+
+    .articulo2{
+        padding: 20px;
+    }
+
+    .articulo3{
+        padding: 20px;
+    }
+
+    .articulo4{
+        padding: 20px;
+    }
+}
