@@ -6,7 +6,7 @@
 #grid_padre_fotos{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 250px  4100px 70px;
+    grid-template-rows: 250px  3000px 70px;
     grid-template-areas: 
     'header'
     'main'
@@ -47,6 +47,7 @@
 }
 
 
+
 @media screen and (min-width: 1200px){
 
    
@@ -54,7 +55,7 @@
     #grid_padre_fotos{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 80px  1600px 70px;
+        grid-template-rows: 80px  1200px 70px;
         grid-template-areas: 
         'header'
         'main'
@@ -75,6 +76,5 @@
         display: flex;
         justify-content: center;
     }
-
 
 }

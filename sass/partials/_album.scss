@@ -3,18 +3,85 @@
     padding: 0;
 }
 
+
+#grid_padre_album{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px  11300px 70px;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+
 .album1{
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid black;
     border-color: black;
-        
-        p{
-            text-align: justify;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: black;
-            font-size: 30px;
+
+       
+        img{
+            box-sizing: border-box;
+            width: 300px;
         }
+        
+        
 }
 
+.palbum{
+            width: 300px;
+            padding: 50px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            font-size: 15px;
+        }
+
+.ulalbum{
+    
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .lia{
+        list-style: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+
+        a{
+            font-weight: bold;
+            height: 30%;
+            font-family: 'Overlock SC', cursive;
+            text-decoration: none;
+            font-size: 15px;
+            color:black; 
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1200px){
+
+
+            #grid_padre_album{
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: 80px  9500px 70px;
+              grid-template-areas: 
+              'header'
+              'main'
+              'footer';
+          }
+
+          .palbum{
+            width: 900px;
+          }
+
+          
+        }
